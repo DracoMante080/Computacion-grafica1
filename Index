@@ -6,13 +6,13 @@
     <title>Computación Gráfica</title>
     <link rel="icon" type="image/x-icon" href="./src/icono4.ico">
     </head>
-<body>
+<body >
     <section id="navbar">
 
     </section>
 
     <section id="banner">    
-    
+
     </section>
 
 </html>
