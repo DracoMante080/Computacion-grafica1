@@ -1,5 +1,5 @@
 :root{
-    --bg-body :  #1f212c;
+    --bg-body :  #d4af37;
     --primary-color : #2c5bff;
     --fontSize-tittle: 40px;
     --fontSize-parrafos: 20px;
@@ -8,17 +8,17 @@
 body{
     background: var(--bg-body);
 }
-nav.bg-gym{
+nav.bg-casino{
     background: var(--bg-body);
 }
-nav.navbar-brand img{
+.navbar-brand img{
     width: 200px;
 }
-nav.bg-gym ul li a{
+nav.bg-casino ul li a{
     color: #fff;
     position: relative;
 }
-nav.bg-gym ul li a::after{
+nav.bg-casino ul li a::after{
     content: "";
     position: absolute;
     width: 20%;
@@ -29,20 +29,20 @@ nav.bg-gym ul li a::after{
     transition: .4s;
 }   
 
-nav.bg-gym ul li a:hover{
+nav.bg-casino ul li a:hover{
     color: var(--primary-color);
 }
-nav.bg-gym ul li a:hover::after{
+nav.bg-casino ul li a:hover::after{
     background: var(--primary-color);
     width: 40%;
 } 
 
-nav.bg-gym ul li.login{
+nav.bg-casino ul li.login{
     margin-left : 400px;
     margin-right: 30px;
 }
 
-nav.bg-gym ul li.registro{
+nav.bg-casino ul li.registro{
     display: block;
     padding: 12px;
     padding-left: 30px !important;
