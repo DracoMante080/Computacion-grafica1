@@ -1,70 +1,82 @@
 :root{
-    --bg-body :  #d4af37;
-    --primary-color : #2c5bff;
+    --bg-body: linear-gradient(to bottom, #111, #1a1a1a);
+    --primary-color: #d4af37;
     --fontSize-tittle: 40px;
     --fontSize-parrafos: 20px;
 }
 
 body{
-    background: var(--bg-body);
+    font-family: 'Cinzel', serif;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: white;
 }
+
+
 nav.bg-casino{
-    background: var(--bg-body);
+    background: #000;
 }
+
 .navbar-brand img{
-    width: 200px;
+    width: 180px;
 }
+
+nav .navbar-brand img{
+    width: 80px;              
+    height: 80px;             
+    object-fit: cover;        
+    border-radius: 50%;       
+    border: 2px solid #d4af37; 
+    box-shadow: 0 0 10px #d4af37,
+                0 0 20px #d4af37,
+                0 0 40px #d4af37; 
+    transition: 0.3s ease;
+}
+
+nav .navbar-brand img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffd700,
+                0 0 30px #ffd700,
+                0 0 60px #ffd700;
+}
+
 nav.bg-casino ul li a{
     color: #fff;
     position: relative;
 }
+
 nav.bg-casino ul li a::after{
     content: "";
     position: absolute;
-    width: 20%;
+    width: 0%;
     height: 2px;
-    background: transparent;
-    left: 10px;
-    bottom: 2px;
-    transition: .4s;
-}   
+    background: var(--primary-color);
+    left: 0;
+    bottom: -5px;
+    transition: .3s;
+}
 
 nav.bg-casino ul li a:hover{
     color: var(--primary-color);
 }
+
 nav.bg-casino ul li a:hover::after{
-    background: var(--primary-color);
-    width: 40%;
-} 
-
-nav.bg-casino ul li.login{
-    margin-left : 400px;
-    margin-right: 30px;
-}
-
-nav.bg-casino ul li.registro{
-    display: block;
-    padding: 12px;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-    color: #fff;
-    background: var(--primary-color);
-    border-radius: 4px;
-
+    width: 100%;
 }
 
 #hero{
-    padding: 120px 0 ;
+    padding: 120px 0;
 }
+
 #hero .cont-foto{
     position: relative;
     width: 400px;
 }
 
 #hero .cont-foto img{
-    z-index: 2;
     position: relative;
-    width: 400px;
+    width: 100%;
+    z-index: 2;
+    border-radius: 10px;
 }
 
 #hero .cont-foto::before{
@@ -73,38 +85,57 @@ nav.bg-casino ul li.registro{
     width: 100%;
     height: 100%;
     background: var(--primary-color);
-    top: -40px;
-    left: 40px;
+    top: -20px;
+    left: 20px;
     z-index: 1;
+    border-radius: 10px;
 }
 
 #hero .cont-info{
     padding-left: 60px;
 }
-#hero .cont-info h1{
-    font-size: 50px ;
-    color: #fff;
-}
-#hero .cont-info h1 span{
-    border-bottom: 8px solid #fff;
 
+#hero .cont-info h1{
+    font-size: 50px;
+    color: var(--primary-color);
 }
+
 #hero .cont-info p{
     font-size: var(--fontSize-parrafos);
-    color: #fff;
-    margin-bottom: 80px;
-}
-#hero .cont-info .destacada{
-    font-size: var(--fontSize-tittle);
-    color: #fff;
-
-    text-align: left;
-}
-#hero .cont-info .destacada p{
-    font-size: 14px;
+    color: #ccc;
 }
 
 
-.colorText{
-    color: white;
+.titulo-casino{
+    font-family: 'Cinzel', serif;
+    font-size: 75px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+    color: var(--primary-color);
+
+    text-shadow:
+        2px 2px 0 #000,
+        4px 4px 0 #000,
+        6px 6px 0 #000,
+        0 0 10px var(--primary-color),
+        0 0 20px var(--primary-color),
+        0 0 40px var(--primary-color);
+
+    transition: all 0.3s ease;
 }
+
+.titulo-casino:hover{
+    transform: scale(1.08);
+
+    text-shadow:
+        3px 3px 0 #000,
+        6px 6px 0 #000,
+        9px 9px 0 #000,
+        0 0 15px #ffd700,
+        0 0 30px #ffd700,
+        0 0 60px #ffd700,
+        0 0 100px #ffd700;
+}
+
